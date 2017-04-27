@@ -3,15 +3,12 @@ var areTheyOver21 = function(dateOfBirth){
   var userYear = parseInt(dateOfBirth.slice(0,4));
   var userMonth = parseInt(dateOfBirth.slice(5,7));
   var userDay = parseInt(dateOfBirth.slice(8,10));
-  // console.log("userYear = ", userYear);
-  // console.log("userMonth= ", userMonth);
   // today's date
   var today = new Date();
   var todayDay = parseInt(today.getDate());
   var todayMonth = parseInt(today.getMonth()+1);
   var todayYear= parseInt(today.getFullYear());
   //calculation
-
   if (todayYear - userYear < 21){
     // areTheyOver21 = "fail"
     var is21 = ("YOU SHALL NOT PASS");
