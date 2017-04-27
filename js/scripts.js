@@ -14,12 +14,12 @@ var areTheyOver21 = function(dateOfBirth){
 
   if (todayYear - userYear < 21){
     // areTheyOver21 = "fail"
-    var is21 = false;
+    var is21 = ("YOU SHALL NOT PASS");
     return is21;
   }
 
   if (todayYear - userYear > 21){
-    var is21 = true;
+    var is21 = ("You may pass");
     return is21;
   }
 
@@ -29,9 +29,9 @@ var areTheyOver21 = function(dateOfBirth){
     if (todayMonth - userMonth === 0) {
       console.log("Month fail");
       //check day to see if its over ...
-      if (todayDay - userDay ===0 ) {
+      if (todayDay - userDay === 0 ) {
         console.log("happy birthday!  Find a designated driver.");
-        var is21 = true;
+        var is21 = ("happy birthday!  Find a designated driver.");
         return is21;
       }
     }
@@ -45,7 +45,7 @@ $(document).ready(function(){
     var dateOfBirth = $("#born").val();
     var result = areTheyOver21(dateOfBirth);
     console.log(result, typeof(result));
-    $("output").text(result);
+    $("#output").text(result);
     // console.log(success);
   });
 });
