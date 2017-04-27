@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/parkstyles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/parkscripts.js"></script>
+    <title>Amusement Park!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>YOU MUST BE THIS TALL</h1>
+<!--HEIGHT PROMPT-->
+      <form id="stats">
+        <select class="form-control" id="heightFeet">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5+</option>
+        </select>
+        <button type="submit" class="btn">What can you ride?</button>
+      </form>
+      <div id="output">
+        <div id="ride3">
+          <a href="https://www.carowinds.com/play/rides/charlie-browns-windup" target="_blank"><img src="img/charBrownRide.jpg" alt="A Fun Ride for Kids!"></a>
+        </div>
+        <div id="ride4">
+          <a href="https://www.carowinds.com/play/rides/plants-vs-zombies-garden-warfare-3z-arena" target="_blank"><img src="img/plantsZombie.jpg" alt="A Fun Ride for the whole Family!"></a>
+        </div>
+        <div id="ride5">
+          <a href="https://www.carowinds.com/play/rides/electro-spin" target="_blank"><img src="http://coaster-nation.com/wp-content/uploads/2016/08/carowinds-electro-spin.jpg" alt="electro spin!!"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
